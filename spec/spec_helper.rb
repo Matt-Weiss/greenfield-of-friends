@@ -11,6 +11,12 @@ Capybara.save_path = 'tmp/capybara'
 
 DatabaseCleaner.strategy = :truncation
 
+module RSpecMixin
+  include Rack::Test::Methods
+  def app() FriendshipsApp end
+  # def app() Sinatra::Application end
+end
+
 RSpec.configure do |c|
   c.include Capybara::DSL
 
@@ -20,4 +26,6 @@ RSpec.configure do |c|
   c.after(:each) do
     DatabaseCleaner.clean
   end
+
+  c.include RSpecMixin
 end
