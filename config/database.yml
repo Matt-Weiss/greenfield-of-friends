@@ -1,0 +1,13 @@
+# specify which database and adapter to use for which environment
+
+development:
+  adapter: postgresql
+  database: friendships-development
+
+test:
+  adapter: postgresql
+  database: friendships-test
+
+production:
+  adapter: postgresql
+  database: friendships-production
