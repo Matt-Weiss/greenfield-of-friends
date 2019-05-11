@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'activerecord', "< 5.0.0" 
+gem 'activerecord'
 gem 'pg', '~> 0.18'
 gem 'sinatra', require: 'sinatra/base'
 gem 'sinatra-activerecord'
