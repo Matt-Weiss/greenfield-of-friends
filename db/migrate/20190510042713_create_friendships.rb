@@ -1,4 +1,4 @@
-class CreateFriendships < ActiveRecord::Migration[5.2]
+class CreateFriendships < ActiveRecord::Migration
   def change
     create_table :friendships do |t|
       t.integer :initiator_github_id
