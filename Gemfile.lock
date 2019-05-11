@@ -52,6 +52,7 @@ GEM
       rack
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
+    rake (12.3.2)
     ripl (0.7.1)
       bond (~> 0.5.1)
     ripl-multi_line (0.3.1)
@@ -114,6 +115,7 @@ DEPENDENCIES
   pg (~> 0.18)
   pry
   rack-test
+  rake
   rspec
   shotgun
   sinatra
