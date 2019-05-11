@@ -4,4 +4,6 @@ require './environments'
 
 
 class Friendship < ActiveRecord::Base
+
+  
 end
