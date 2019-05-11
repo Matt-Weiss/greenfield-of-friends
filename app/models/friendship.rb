@@ -1,4 +1,8 @@
 class Friendship < ActiveRecord::Base
-  validates_presence_of :initiator_github_id,
-                        :recipient_github_id
+  validates :initiator_github_id,
+            :recipient_github_id,
+                presence: true,
+                numericality: {
+                  only_integer: true
+                }
 end
