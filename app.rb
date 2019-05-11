@@ -1,8 +1,7 @@
-# require 'bundler'
-# require 'sinatra'
-# require 'sinatra/activerecord'
-# require './environments'
+require 'sinatra'
+require 'sinatra/activerecord'
+require './environments'
 
 
-class Friendships < ActiveRecord::Base
+class Friendship < ActiveRecord::Base
 end
